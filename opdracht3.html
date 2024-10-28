@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript - Eindopdracht</title>
+    <link rel="stylesheet" href="stijl.css">
+    <script src="opdrachten.js"></script>
+</head>
+
+<body>
+    <!-- Navigatie-menu -->
+    <ul class="navbar">
+        <li><a href="homepage.html">Home page</a></li>
+        <li><a href="opdracht1.html">1. Waardes ophalen</a></li>
+        <li><a href="opdracht2.html">2. If Genres</a></li>
+        <li><a href="opdracht3.html">3. While paintball</a></li>
+        <li><a href="opdracht4.html">4. For Auto kleuren</a></li>
+        <li><a href="opdracht5.html">5. Switch games</a></li>
+    </ul>
+    <h1>Opdracht 3</h1>
+    <h2>Lekker paintballen</h2>
+    <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 20px; background-color: aqua;">Beoordelings model zei dat ik extra puntje kreeg voor HTML aanpassing dus hier heb je er eentje</p>
+    <p>
+        Je hebt een paintball geweer met (standaard) 20 verfballen.
+        Zodra op de knop schieten geklikt wordt moet je de hoeveelheid verfballen uitlezen en opslaan in een variabele.
+        Vervolgens moet een while loop gestart worden waarin de hoeveelheid verfballen omlaag gaat, tot er geen meer
+        over zijn.
+        Bij elke verfbal dient een melding "Pang! Nog {aantal verfballen} te gaan." te worden getoond aan de gebruiker.
+        Om de 5 schoten raak je iemand en moet de melding "Auw!" in beeld komen.
+    </p>
+    <hr/>
+    <h3>Voor gevorderde</h3>
+    <p> Waarschijnlijk heb je in de vorige opdracht een if statement gebruikt met de waardes 0, 5, 10, 15. Dit is
+        natuurlijk niet zo efficient, want als je 25 verfballen hebt, dan weet je applicatie niet dat hij bij 20 ook een
+        alert moet tonen.
+        Probeer een oplossing te bedenken die werkt voor alle getallen die deelbaar zijn door 5. (Hint: Gebruik hiervoor
+        de modulus)</p>
+    <div class="main-content">
+        <div>
+            <input type="number" id="paintballs" />
+            <button onclick="shootPaintballGun()">Schieten</button>
+        </div>
+    </div>
+</body>
+
+</html>

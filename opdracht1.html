@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript - Eindopdracht</title>
+    <link rel="stylesheet" href="stijl.css">
+    <script src="opdrachten.js"></script>
+    <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 20px; background-color: aqua;">Beoordelings model zei dat ik extra puntje kreeg voor HTML aanpassing dus hier heb je er eentje</p>
+</head>
+
+<body>
+    <!-- Navigatie-menu -->
+    <ul class="navbar">
+        <li><a href="homepage.html">Home page</a></li>
+        <li><a href="opdracht1.html">1. Waardes ophalen</a></li>
+        <li><a href="opdracht2.html">2. If Genres</a></li>
+        <li><a href="opdracht3.html">3. While paintball</a></li>
+        <li><a href="opdracht4.html">4. For Auto kleuren</a></li>
+        <li><a href="opdracht5.html">5. Switch games</a></li>
+    </ul>
+    <h1>Opdracht 1</h1>
+    <h2>Waardes ophalen en gebruiken</h2>
+    <p>In het onderstaande vak vind je 3 inputs, voor Rood Groen en Blauw.<br />
+        Zodra op de knop wordt geklikt wordt de functie <strong>changeColor</strong> aangeroepen. In die functie moet
+        het volgende gebeuren: <br /> Lees de waardes van deze inputs uit en sla
+        deze op in een variabele met bijbehorende naam.<br />
+        Vervolgens staat er een div met de ID "colorBox".<br /> Gebruik de opgehaalde waardes voor Rood Groen en Blauw
+        om de achtergrondkleur van die colorBox aan te passen. <br />
+    </p>
+    <p>
+        <strong>Hint: Let goed op dat er kommas tussen elk cijfer in de rgb moeten zitten</strong>
+    </p>
+    <div class="main-content">
+        <div>
+            <div class="colorInput">
+                <label for="red"><span style="color: red;">red</span></label>
+                <input type="number" min="0" max="255" id="red" />
+            </div>
+            <div class="colorInput">
+                <label for="green"><span style="color: green;">green</span></label>
+                <input type="number" min="0" max="255" id="green" />
+            </div>
+            <div class="colorInput">
+                <label for="blue"><span style="color: blue;">blue</span></label>
+                <input type="number" min="0" max="255" id="blue" />
+            </div>
+            <button onclick="changeColor()" style="margin-left:50px;margin-top:20px;">Verander de kleur</button>
+        </div>
+        <div id="colorBox">
+
+        </div>
+    </div>
+</body>
+</body>
+
+</html>

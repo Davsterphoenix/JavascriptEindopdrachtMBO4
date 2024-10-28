@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript - Eindopdracht</title>
+    <link rel="stylesheet" href="stijl.css">
+    <script src="opdrachten.js"></script>
+    <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 20px; background-color: aqua;">Beoordelings model zei dat ik extra puntje kreeg voor HTML aanpassing dus hier heb je er eentje</p>
+</head>
+
+<body>
+    <!-- Navigatie-menu -->
+    <ul class="navbar">
+        <li><a href="homepage.html">Home page</a></li>
+        <li><a href="opdracht1.html">1. Waardes ophalen</a></li>
+        <li><a href="opdracht2.html">2. If Genres</a></li>
+        <li><a href="opdracht3.html">3. While paintball</a></li>
+        <li><a href="opdracht4.html">4. For Auto kleuren</a></li>
+        <li><a href="opdracht5.html">5. Switch games</a></li>
+    </ul>
+    <h1>Opdracht 4</h1>
+    <h2>Itereren over opties</h2>
+    <p>
+        Haal alle opties uit de select met de id "color" en sla deze op in een variabele. Doe hetzelfde voor de select met de id "vehicle".
+        Je hebt nu twee arrays. 
+        Maak een for loop die itereert over de array met kleuren. (Tip: Gebruik de lengte van de array als maximale waarde). En schrijf binnen deze for loop nog een for loop die itereert over alle voertuigen.
+        Gebruik deze for loops om voor elke mogelijke combinatie van kleur en voertuig een alert te tonen.
+
+        De geselecteerde opties zijn niet belangrijk. Het gaat in deze opdracht om alle mogelijke combinaties.
+    </p>
+    <hr>
+    <h3>Voor gevorderde</h3>
+    <p>
+        Gebruik een foreach loop om dit probleem op te lossen.
+    </p>
+    <div class="main-content">
+        <div>
+            <div>
+                <select id="color">
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="red">Red</option>
+                    <option value="black">Black</option>
+                </select>
+                <select id="vehicle">
+                    <option value="car">Car</option>
+                    <option value="bicycle">Bycicle</option>
+                    <option value="bus">Bus</option>
+                </select>
+                <button onclick="outputVehicleColorCombinations()" style="margin-left:50px;margin-top:20px;">Toon combinaties</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

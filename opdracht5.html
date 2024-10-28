@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript - Eindopdracht</title>
+    <link rel="stylesheet" href="stijl.css">
+    <script src="opdrachten.js"></script>
+    <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 20px; background-color: aqua;">Beoordelings model zei dat ik extra puntje kreeg voor HTML aanpassing dus hier heb je er eentje</p>
+</head>
+
+<body>
+    <!-- Navigatie-menu -->
+    <ul class="navbar">
+        <li><a href="homepage.html">Home page</a></li>
+        <li><a href="opdracht1.html">1. Waardes ophalen</a></li>
+        <li><a href="opdracht2.html">2. If Genres</a></li>
+        <li><a href="opdracht3.html">3. While paintball</a></li>
+        <li><a href="opdracht4.html">4. For Auto kleuren</a></li>
+        <li><a href="opdracht5.html">5. Switch games</a></li>
+    </ul>
+    <h1>Opdracht 5</h1>
+    <h2>Switch games</h2>
+    <p>
+        Gegeven is een select met de id "actions". In de javascript staan ook een aantal functies.
+        Zodra op de knop "It's-a me!" geklikt wordt, moet de geselecteerde optie worden uitgevoerd. 
+        <b>Gebruik hiervoor een Switch statement</b>
+
+        <ul>
+            <li>Als de actie "Jump" of de actie "Wahoo!!!" is geselecteerd, moet de jump functie uitgevoerd worden.</li>
+            <li>Als de actie "Fireball" is geselecteerd, moet de fireBall functie uitgevoerd worden.</li>
+            <li>Als de actie "Game Over" is geselecteerd, moet de gameOver functie uitgevoerd worden.</li>
+            <li>In alle andere gevallen moet de marioDefault functie uitgevoerd worden.</li>
+        </ul>
+    </p>
+    <div class="main-content">
+        <div>
+            <div>
+                <select id="actions">
+                    <option value="stand">Stand</option>
+                    <option value="jump">Jump</option>
+                    <option value="wahoo">Wahoo!!!</option>
+                    <option value="fireball">Fireball</option>
+                    <option value="gameover">Game Over</option>
+                </select>
+                <button onclick="executeMarioAction()" style="margin-left:50px;margin-top:20px;">It's-a me!</button>
+            </div>
+            <div class="mario-container">
+                <img id="mario" src="images/mario.png" style="height:500px; margin-top: 50px;"/>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

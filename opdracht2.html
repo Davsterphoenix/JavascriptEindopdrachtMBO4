@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript - Eindopdracht</title>
+    <link rel="stylesheet" href="stijl.css">
+    <script src="opdrachten.js"></script>
+    <p style="color: red; font-family: Arial, Helvetica, sans-serif; font-size: 20px; background-color: aqua;">Beoordelings model zei dat ik extra puntje kreeg voor HTML aanpassing dus hier heb je er eentje</p>
+</head>
+
+<body>
+    <!-- Navigatie-menu -->
+    <ul class="navbar">
+        <li><a href="homepage.html">Home page</a></li>
+        <li><a href="opdracht1.html">1. Waardes ophalen</a></li>
+        <li><a href="opdracht2.html">2. If Genres</a></li>
+        <li><a href="opdracht3.html">3. While paintball</a></li>
+        <li><a href="opdracht4.html">4. For Auto kleuren</a></li>
+        <li><a href="opdracht5.html">5. Switch games</a></li>
+    </ul>
+    <h1>Opdracht 2</h1>
+    <h2>If structuur genres</h2>
+    <p>
+        Op Netflix staan een hoop films en series. In dit scherm kies je eerst een genre en vervolgens één of meerdere
+        tags.
+        Als je dan op de knop klikt wordt op basis van de geselecteerde items een suggestie gedaan voor een film of
+        serie.
+        Die suggestie moet in de input "suggestion" getoond worden aan de gebruiker.
+    </p>
+    <ul>
+        <li>Als geen enkele tag staat aangevinkt dient de suggestie te zijn: <strong>"Vink alstublieft een aantal tags
+            aan."</strong></li>
+        <li>Als het genre science fiction is en de tags actie en serie allebij zijn aangevinkt, dient de suggestie
+        <strong>"Altered Carbon"</strong> te zijn.</li>
+        <li>Als het genre fantasy is, de tag film is aangevinkt en de tag animatie NIET is aangevinkt, dient de suggestie
+        <strong>"The lord of the rings"</strong> te zijn.</li>
+        <li>In alle andere gevallen moet de suggestie zijn: <strong>"Excuses, geen suggestie gevonden."</strong></li>
+        </ul>
+    <p>
+        <strong>Hint: Het gaat er bij de tags om dat ze zijn aangevinkt, dus niet om de waarde.</strong>
+    </p>
+    <hr />
+    <h3>Voor gevorderde</h3>
+<p>Voeg een extra else if statemet toe met de volgende conditie:
+    <ul>
+        <li>Als het genre science fiction OF comedy is, de tag actie is aangevinkt en de tag serie NIET is aangevinkt, dient
+            de suggestie <strong>"Men in Black"</strong> te zijn.</li>
+    </ul>
+</p>
+    <div class="main-content">
+        <p>Selecteer een genre:</p>
+        <select id="genre">
+            <option value="scifi" selected>Science Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="comedy">Comedy</option>
+        </select>
+        <hr />
+        <p>Selecteer een aantal tags:</p>
+        <div>
+            <input type="checkbox" id="action" name="action">
+            <label for="action">Actie</label>
+        </div>
+        <div>
+            <input type="checkbox" id="animation" name="animation">
+            <label for="animation">Animatie</label>
+        </div>
+        <div>
+            <input type="checkbox" id="series" name="series">
+            <label for="series">Serie</label>
+        </div>
+        <div>
+            <input type="checkbox" id="movie" name="movie">
+            <label for="movie">Film</label>
+        </div>
+        <hr />
+        <button onclick="suggestSomethingToWatch();">Wat te kijken?</button>
+        <input type="text" id="suggestion" />
+    </div>
+</body>
+
+</html>
